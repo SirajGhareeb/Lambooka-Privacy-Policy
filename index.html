@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lambooka - Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #122656;
+      --secondary: #006A6A;
+      --secondary-dark: #76D6D5;
+      --secondary-container: #E6F4F4; /* Lighter soft teal for better contrast */
+      --background: #F8FAFC; /* Slate-50: modern, clean light gray-blue */
+      --surface: #FFFFFF;
+      --text: #0F172A; /* Slate-900: high-contrast dark text */
+      --text-secondary: #334155; /* Slate-700 */
+      --border: #E2E8F0; /* Slate-200 */
+      --border-strong: #CBD5E1; /* Slate-300 */
+      --shadow-color: rgba(15, 23, 42, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      line-height: 1.65;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, #1e3b82 100%);
+      color: #FFFFFF;
+      padding: 4rem 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 30px var(--shadow-color);
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--secondary-dark);
+    }
+
+    .logo-container {
+      margin-bottom: 1rem;
+    }
+
+    .logo-icon {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+
+    .logo-accent {
+      color: var(--secondary-dark);
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: var(--secondary-dark);
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1040px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.5rem;
+    }
+
+    aside {
+      position: sticky;
+      top: 2rem;
+      height: fit-content;
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px -5px var(--shadow-color), 0 8px 10px -6px var(--shadow-color);
+    }
+
+    .toc h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.75px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.5rem;
+    }
+
+    .toc ul {
+      list-style: none;
+    }
+
+    .toc li {
+      margin-bottom: 0.75rem;
+    }
+
+    .toc a {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+      font-weight: 500;
+      display: block;
+      padding: 2px 0;
+    }
+
+    .toc a:hover {
+      color: var(--secondary);
+      transform: translateX(-4px);
+    }
+
+    main {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 3.5rem;
+      box-shadow: 0 20px 25px -5px var(--shadow-color), 0 10px 10px -5px var(--shadow-color);
+    }
+
+    section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 2rem;
+    }
+
+    section:last-of-type {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.75rem;
+      letter-spacing: -0.5px;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      color: var(--primary);
+      margin: 1.5rem 0 0.75rem 0;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 1.25rem;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    ul, ol {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .highlight-card {
+      background-color: var(--secondary-container);
+      color: var(--primary);
+      border-left: 4px solid var(--secondary);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+
+    .highlight-card p {
+      color: var(--primary);
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .important-alert {
+      background-color: #FFF0F0;
+      color: #93000A;
+      border-left: 4px solid #BA1A1A;
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.75rem 0;
+    }
+
+    .important-alert p {
+      color: #93000A;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .action-link {
+      color: var(--secondary);
+      text-decoration: underline;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .action-link:hover {
+      color: var(--primary);
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: #FFFFFF;
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      margin-top: 6rem;
+      font-size: 0.95rem;
+      opacity: 0.95;
+      border-top: 4px solid var(--secondary-dark);
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+        margin: 1.5rem auto;
+      }
+      aside {
+        display: none;
+      }
+      main {
+        padding: 2rem;
+        border-radius: 16px;
+      }
+      header {
+        padding: 3rem 1.5rem;
+      }
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <a href="#" class="logo-icon">Lambo<span class="logo-accent">oka</span></a>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p>Effective Date: June 2, 2026</p>
+  </header>
+
+  <div class="container">
+    <aside>
+      <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+          <li><a href="#introduction">1. Introduction</a></li>
+          <li><a href="#data-collection">2. Information We Collect</a></li>
+          <li><a href="#location-disclosure">3. Location Data Usage</a></li>
+          <li><a href="#how-we-use-data">4. How We Use Data</a></li>
+          <li><a href="#data-sharing">5. Data Sharing & Disclosure</a></li>
+          <li><a href="#data-deletion">6. Deletion & Retention</a></li>
+          <li><a href="#security">7. Security of Your Data</a></li>
+          <li><a href="#changes">8. Changes to Policy</a></li>
+          <li><a href="#contact">9. Contact Us</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <main>
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+        <p>Welcome to Lambooka. We are committed to protecting your privacy and ensuring you have a safe and secure experience using our application. This Privacy Policy describes how Lambooka collects, uses, processes, and shares your personal information in connection with your use of our modular monolith marketplace and delivery platform.</p>
+        <p>By using the Lambooka mobile application or our services, you consent to the practices described in this Privacy Policy.</p>
+      </section>
+
+      <section id="data-collection">
+        <h2>2. Information We Collect</h2>
+        <p>To provide our delivery and marketplace services effectively, we collect the following categories of information:</p>
+        <ul>
+          <li><strong>Account Information:</strong> When you create an account, we collect your name, email address, phone number, and account credentials.</li>
+          <li><strong>Delivery Addresses:</strong> We store the labels (e.g., Home, Office), coordinates, and delivery notes you provide to accurately drop off your purchases.</li>
+          <li><strong>Transaction History:</strong> We keep records of orders, items purchased, totals paid, and status timeline configurations for account auditing.</li>
+          <li><strong>Device Information:</strong> We may collect technical details such as your device model, operating system version, and unique device identifiers to optimize application performance.</li>
+        </ul>
+      </section>
+
+      <section id="location-disclosure">
+        <h2>3. Location Data Usage Disclosure</h2>
+        <p>Lambooka is a marketplace and delivery tracking application. Accurate location information is vital to coordinate operations between customers, vendors, and couriers.</p>
+        
+        <div class="highlight-card">
+          <p><strong>Foreground and Background Location Access:</strong><br>
+          Lambooka collects precise location coordinates (latitude and longitude) from your mobile device. If you register as a courier or delivery partner, we collect this location data when the application is running in the foreground or background (when the app is closed or not in active use) to enable real-time order tracking, route optimizations, and delivery updates for customers.</p>
+        </div>
+        
+        <p>For standard customer accounts, location coordinates are requested in the foreground to help you select a delivery pin on the Leaflet map and to calculate nearby delivery fees and vendor availability.</p>
+      </section>
+
+      <section id="how-we-use-data">
+        <h2>4. How We Use Your Information</h2>
+        <p>We use the collected data for the following purposes:</p>
+        <ul>
+          <li><strong>Fulfill Orders:</strong> We route order contents, delivery instructions, and destination locations to vendors and couriers to complete deliveries.</li>
+          <li><strong>Delivery Tracking:</strong> We show real-time tracking routes on maps for order delivery status updates.</li>
+          <li><strong>Customer Support:</strong> We resolve technical problems, handle payment disputes, and communicate order details.</li>
+          <li><strong>Security & Authentication:</strong> We verify accounts, prevent fraudulent transactions, and secure data integrity.</li>
+        </ul>
+      </section>
+
+      <section id="data-sharing">
+        <h2>5. Data Sharing and Disclosure</h2>
+        <p>We share user data under the following circumstances:</p>
+        <ul>
+          <li><strong>With Delivery Couriers:</strong> Delivery partners receive your selected address label, coordinates, and delivery notes to drop off order packages.</li>
+          <li><strong>With Third-Party Payment Gateways:</strong> Payment details are securely routed to payment processors to complete financial transactions. We do not store credit card credentials on our servers.</li>
+          <li><strong>For Legal Reasons:</strong> We may disclose information if required to do so by applicable laws, regulations, or legal processes.</li>
+        </ul>
+      </section>
+
+      <section id="data-deletion">
+        <h2>6. Account Deletion & Data Retention</h2>
+        <p>We retain your personal information only as long as necessary to fulfill transactions and comply with legal requirements.</p>
+        
+        <div class="important-alert">
+          <p><strong>How to Delete Your Account and Data:</strong><br>
+          You have the right to request the deletion of your account and all associated personal data at any time. You can request deletion directly within the mobile application (navigate to Profile > Settings > Delete Account) or by sending an email with your request to <a href="mailto:support@lambooka.ly" class="action-link">support@lambooka.ly</a>.<br><br>
+          Upon receiving a deletion request, we will permanently purge your profile, address records, and personal account details from our active databases within 30 days, retaining only anonymized transaction records for financial audit requirements.</p>
+        </div>
+      </section>
+
+      <section id="security">
+        <h2>7. Security of Your Data</h2>
+        <p>We implement industry-standard administrative, physical, and technical security safeguards (such as HTTPS encryption and rate limiting) to protect your personal data from unauthorized access, disclosure, or modification. However, no electronic transmission over the internet or database storage system can be guaranteed 100% secure.</p>
+      </section>
+
+      <section id="changes">
+        <h2>8. Changes to this Privacy Policy</h2>
+        <p>We may update our Privacy Policy from time to time. When we make updates, we will change the "Effective Date" at the top of this policy and notify users through app updates or email alerts for significant changes.</p>
+      </section>
+
+      <section id="contact">
+        <h2>9. Contact Us</h2>
+        <p>If you have any questions or suggestions about this Privacy Policy, or if you wish to file a data access or deletion request, please contact us at:</p>
+        <p><strong>Email:</strong> <a href="mailto:support@lambooka.ly" class="action-link">support@lambooka.ly</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Lambooka. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
